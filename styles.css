@@ -104,6 +104,9 @@ nav {
   display: none;
 }
 
+
+}
+
 .nav__menu__btn {
   font-size: 1.5rem;
   color: var(--white);
@@ -196,11 +199,11 @@ nav {
 }
 
 .banner__card:nth-child(1) {
-  background-image: url("assets/banner-1.png");
+  background-image: url("assets/try1.jpg");
 }
 
 .banner__card:nth-child(2) {
-  background-image: url("assets/banner-2.png");
+  background-image: url("assets/try2.jpg");
 }
 
 .banner__card:nth-child(3) {
