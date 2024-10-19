@@ -10,7 +10,6 @@
   --header-font-1: "Alfa Slab One", serif;
   --header-font-2: "Bebas Neue", sans-serif;
 }
-
 .modal {
   display: none;
   position: fixed;
@@ -31,7 +30,7 @@
 .modal-content {
   background-color: #fff;
   padding: 20px;
-  width: 100%;
+  width: 90%; /* Use a percentage for responsiveness */
   max-width: 400px;
   border-radius: 8px;
   text-align: center;
@@ -63,7 +62,6 @@
   box-sizing: border-box;
 }
 
-
 .form-group.checkbox-group {
   display: flex;
   align-items: center; 
@@ -83,8 +81,8 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: 100%; /* Make buttons full width */
 }
-
 
 .modal-footer {
   margin-top: 15px;
@@ -102,6 +100,24 @@
 .modal-footer a {
   color: #0066cc;
   text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .close-btn {
+    font-size: 20px; /* Smaller close button on mobile */
+    top: 10px;
+    right: 15px;
+  }
+
+  .login-btn,
+  .signup-btn {
+    padding: 8px; /* Adjust button padding for mobile */
+  }
 }
 
 * {
